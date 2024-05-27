@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>政鑫皮业 - 皮革产品展示</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .company-info {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .company-info h2 {
+            margin-top: 0;
+            color: #e91e63;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .product-name {
+            font-size: 20px;
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .product-price {
+            font-size: 18px;
+            color: #e91e63;
+            margin: 0 0 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .footer-content p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>政鑫皮业</h1>
+    </header>
+    <nav>
+        <a href="index.html">首页</a>
+        <a href="#about">公司简介</a>
+        <a href="#products">产品展示</a>
+        <a href="#contact">联系我们</a>
+    </nav>
+    <div id="about" class="company-info">
+        <h2>公司简介</h2>
+        <p>政鑫皮业是一家专注于提供高质量皮革原材料的公司。我们致力于为客户提供各种类型的皮革材料，包括合成皮革、人造皮革、真皮等，满足不同市场的需求。我们的产品广泛应用于各类皮具制造、家具装饰以及汽车内饰等领域。</p>
+        <p>行业：原材料</p>
+    </div>
+    <div id="products" class="container">
+        <h2>产品展示</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="images/image1.jpg" alt="物品1">
+                <h3 class="product-name"><a href="product1.html">物品1：低端产品</a></h3>
+                <p class="product-price">价格：1元</p>
+            </div>
+            <div class="product-card">
+                <img src="images/image2.jpg" alt="物品2">
+                <h3 class="product-name"><a href="product2.html">物品2：中低端产品</a></h3>
+                <p class="product-price">价格：2元</p>
+            </div>
+            <div class="product-card">
+                <img src="images/image3.jpg" alt="物品3">
+                <h3 class="product-name"><a href="product3.html">物品3：中端产品</a></h3>
+                <p class="product-price">价格：3元</p>
+            </div>
+            <div class="product-card">
+                <img src="images/image4.jpg" alt="物品4">
+                <h3 class="product-name"><a href="product4.html">物品4：中高端产品</a></h3>
+                <p class="product-price">价格：4元</p>
+            </div>
+            <div class="product-card">
+                <img src="images/image5.jpg" alt="物品5">
+                <h3 class="product-name"><a href="product5.html">物品5：高端产品</a></h3>
+                <p class="product-price">价格：5元</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>负责人：万</p>
+            <p>联系方式：123333333</p>
+            <p>地址：某市某区某街道123号</p>
+            <p>版权所有 © 2024 政鑫皮业</p>
+        </div>
+    </footer>
+</body>
+</html>
