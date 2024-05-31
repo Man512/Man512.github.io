@@ -24,11 +24,11 @@
         }
         nav {
             background-color: #444;
-            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            padding: 14px 0;
         }
         nav a {
-            float: left;
-            display: block;
             color: #fff;
             text-align: center;
             padding: 14px 16px;
@@ -113,6 +113,7 @@
         }
     </style>
 </head>
+</head>
 <body>
     <header>
         <h1>政鑫皮业</h1>
@@ -193,12 +194,12 @@
                 <p class="product-price">详情点击下滑字</p>
             </div>
         </div>
-        <div id="advantage" class="advantage">
-            <h2>优势</h2>
-            <p>政鑫皮业优势在于没有中间商赚差价，直接从厂家到消费者，确保质量和价格的优势。</p>
-            <!-- 优势图片使用懒加载和响应式图片 -->
-            <img class="lazyload" data-src="images/中间商.jpg" data-srcset="images/中间商-320w.jpg 320w, images/中间商-640w.jpg 640w, images/中间商.jpg 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" alt="优势图片">
-        </div>
+    </div>
+    <div id="advantage" class="advantage">
+        <h2>优势</h2>
+        <p>政鑫皮业优势在于没有中间商赚差价，直接从厂家到消费者，确保质量和价格的优势。</p>
+        <!-- 优势图片使用懒加载和响应式图片 -->
+        <img class="lazyload" data-src="images/中间商.jpg" data-srcset="images/中间商-320w.jpg 320w, images/中间商-640w.jpg 640w, images/中间商.jpg 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" alt="优势图片">
     </div>
     <footer id="contact">
         <div class="footer-content">
