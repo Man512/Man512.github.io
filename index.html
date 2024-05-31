@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>政鑫皮业 - 皮革产品展示</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" defer></script>
+    <style>
+      
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .company-info, .advantage {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .company-info h2, .advantage h2 {
+            margin-top: 0;
+            color: #e91e63;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .product-name {
+            font-size: 20px;
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .product-price {
+            font-size: 18px;
+            color: #e91e63;
+            margin: 0 0 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .footer-content p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>政鑫皮业</h1>
+    </header>
+    <nav>
+        <a href="index.html">首页</a>
+        <a href="#about">厂家直销</a>
+        <a href="#products">产品展示</a>
+        <a href="#advantage">优势</a>
+        <a href="#contact">联系我们（点击跳转、页面最下方）</a>
+    </nav>
+    <div id="about" class="company-info">
+        <h2>厂家直销</h2>
+        <p>政鑫皮业厂家直销，新欧标环保、无铬再生皮（卷筒、单片）、仿牛皮、PU移膜皮等产品，广泛用于腰带、文具、箱包、家私、鞋材皮、皮革制品。</p>
+    </div>
+    <div id="advantage" class="advantage">
+        <h2>优势</h2>
+        <p>政鑫皮业优势在于没有中间商赚差价，直接从厂家到消费者，确保质量和价格的优势。</p>
+        <img src="images/中间商.jpg" alt="优势图片" style="max-width: 100%; height: auto; border-radius: 8px;">
+    </div>
+    <div id="products" class="container">
+        <h2>产品展示</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img class="lazyload" data-src="images/再生2.jpg" alt="普通夹心再生革">
+                <h3 class="product-name"><a href="product1.html">普通夹心再生革</a></h3>
+                <p class="product-price">详情点击下滑字</p>
+            </div>
+            <div class="product-card">
+                <img class="lazyload" data-src="images/高胶环保.jpg" alt="高胶再生革">
+                <h3 class="product-name"><a href="product2.html">高胶再生革</a></h3>
+                <p class="product-price">详情点击下滑字</p>
+            </div>
+            <div class="product-card">
+                <img class="lazyload" data-src="images/双面磨中衬环保.jpg" alt="双磨中衬再生革">
+                <h3 class="product-name"><a href="product3.html">双磨中衬再生革</a></h3>
+                <p class="product-price">详情点击下滑字</p>
+            </div>
+            <div class="product-card">
+                <img class="lazyload" data-src="images/全环保.jpg" alt="新欧标环保再生革">
+                <h3 class="product-name"><a href="product4.html">新欧标环保再生革</a></h3>
+                <p class="product-price">详情点击下滑字</p>
+            </div>
+            <div class="product-card">
+                <img class="lazyload" data-src="images/无铬.jpg" alt="无铬再生革(卷筒、单片)">
+                <h3 class="product-name"><a href="product5.html">无铬再生革(卷筒、单片)</a></h3>
+                <p class="product-price">详情点击下滑字</p>
+            </div>
+            <div class="product-card">
+                <img class="lazyload" data-src="images/定制.jpg" alt="仿牛皮">
+                <h3 class="product-name"><a href="product6.html">仿牛皮</a></h3>
+                <p class="product-price">详情点击下滑字</p>
+            </div>
+            <div class="product-card">
+                <img class="lazyload" data-src="images/定制.jpg" alt="PU移膜皮">
+                <h3 class="product-name"><a href="product7.html">PU移膜皮</a></h3>
+                <p class="product-price">详情点击下滑字</p>
+            </div>
+            <div class="product-card">
+                <img class="lazyload" data-src="images/定制.jpg" alt="压花">
+                <h3 class="product-name"><a href="product8.html">压花</a></h3>
+                <p class="product-price">详情点击下滑字</p>
+            </div>
+            <div class="product-card">
+                <img class="lazyload" data-src="images/定制.jpg" alt="喷涂皮">
+                <h3 class="product-name"><a href="product9.html">喷涂皮</a></h3>
+                <p class="product-price">详情点击下滑字</p>
+            </div>
+            <div class="product-card">
+                <img class="lazyload" data-src="images/定制.jpg" alt="鞋材皮">
+                <h3 class="product-name"><a href="product10.html">鞋材皮</a></h3>
+                <p class="product-price">详情点击下滑字</p>
+            </div>
+            <div class="product-card">
+                <img class="lazyload" data-src="images/环保皮边油.jpg" alt="环保皮边油">
+                <h3 class="product-name"><a href="product12.html">环保皮边油</a></h3>
+                <p class="product-price">详情点击下滑字</p>
+            </div>
+            <div class="product-card">
+                <img class="lazyload" data-src="images/海绵.jpg" alt="海绵">
+                <h3 class="product-name"><a href="product12.html">海绵</a></h3>
+                <p class="product-price">详情点击下滑字</p>
+            </div>
+        </div>
+    </div>
+    <footer id="contact">
+        <div class="footer-content">
+            <p>负责人：万新</p>
+            <p>联系方式：18205793700、13580554453</p>
+            <p>地址：浙江省义乌市江东街道孔村一区59栋</p>
+            <p>版权所有 © 2024 政鑫皮业</p>
+        </div>
+    </footer>
+</body>
+</html>
