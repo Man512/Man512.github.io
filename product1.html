@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>物品：高端产品 </title>
+    <title>政鑫皮业 - 皮革产品展示</title>
+    <!-- 引入 lazysizes 库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.0/lazysizes.min.js" defer></script>
     <style>
+        /* CSS 样式 */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -21,11 +24,11 @@
         }
         nav {
             background-color: #444;
-            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            padding: 14px 0;
         }
         nav a {
-            float: left;
-            display: block;
             color: #fff;
             text-align: center;
             padding: 14px 16px;
@@ -35,51 +38,86 @@
             background-color: #ddd;
             color: black;
         }
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
+        .company-info, .advantage {
+            text-align: center;
             padding: 20px;
             background-color: #fff;
+            margin-bottom: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .company-info h2, .advantage h2 {
+            margin-top: 0;
+            color: #e91e63;
+        }
+        .advantage img {
+            max-width: 100%;
+            height: auto;
             border-radius: 8px;
         }
-        .product img {
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
             margin-bottom: 20px;
         }
-        .product-details {
-            text-align: center;
-        }
         .product-name {
-            font-size: 24px;
+            font-size: 20px;
             margin: 0 0 10px;
             color: #333;
         }
         .product-price {
-            font-size: 20px;
+            font-size: 18px;
             color: #e91e63;
             margin: 0 0 10px;
-        }
-        .product-info {
-            margin-top: 20px;
-        }
-        .product-info h3 {
-            margin-top: 0;
-            color: #333;
-        }
-        .product-info p {
-            margin: 5px 0;
         }
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
             margin-top: 20px;
         }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .footer-content p {
+            margin: 5px 0;
+        }
+
+        /* 响应式设计 */
+        @media screen and (max-width: 768px) {
+            .products-grid {
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            }
+            .product-card img {
+                margin-bottom: 10px;
+            }
+        }
     </style>
+</head>
 </head>
 <body>
     <header>
@@ -87,30 +125,55 @@
     </header>
     <nav>
         <a href="index.html">首页</a>
-        <a href="#about">关于我们</a>
-        <a href="#contact">联系我们</a>
+        <a href="#about">厂家直销</a>
+        <a href="#products">产品展示</a>
+        <a href="#advantage">优势</a>
+        <a href="#contact">联系我们（点击跳转、页面最下方）</a>
     </nav>
-    <div class="container">
-        <div class="product">
-            <img src="images/image5.jpg" alt="物品1">
-            <div class="product-details">
-                <h2 class="product-name">物品1：高端产品</h2>
-                <p class="product-price">价格：联系我们</p>
+    <div id="about" class="company-info">
+        <h2>厂家直销</h2>
+        <p>政鑫皮业厂家直销，新欧标环保、无铬再生皮（卷筒、单片）、仿牛皮、PU移膜皮等产品，广泛用于腰带、文具、箱包、家私、鞋材皮、皮革制品。</p>
+    </div>
+    <div id="products" class="container">
+        <h2>产品展示</h2>
+        <div class="products-grid">
+            <!-- 每个产品卡片使用懒加载和响应式图片 -->
+            <div class="product-card">
+                <img class="lazyload" data-src="images/夹心.jpg" data-srcset="images/夹心-320w.jpg 320w, images/夹心-640w.jpg 640w, images/夹心.jpg 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" alt="普通夹心再生革">
+                <h3 class="product-name">夹心展示</a></h3>
             </div>
-            <div class="product-info">
-                <h3>产品详情</h3>
-                <p>描述：这是一种高端产品。</p>
-                <p>材料：合成皮革</p>
-                <p>颜色：棕色</p>
-                <p>尺寸：200cm x 100cm</p>
+            <div class="product-card">
+                <img class="lazyload" data-src="images/夹心1.jpg" data-srcset="images/夹心1-320w.jpg 320w, images/夹心1-640w.jpg 640w, images/夹心1.jpg 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" alt="普通夹心再生革">
+                <h3 class="product-name">夹心单张</a></h3>
             </div>
+            <div class="product-card">
+                <img class="lazyload" data-src="images/夹心2.jpg" data-srcset="images/夹心2-320w.jpg 320w, images/夹心2-640w.jpg 640w, images/夹心2.jpg 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" alt="普通夹心再生革">
+                <h3 class="product-name">夹心卷材</a></h3>
         </div>
     </div>
-    <footer>
-        <p>负责人：万新</p>
-        <p>联系方式：18205793700、13580554453</p>
-        <p>地址：浙江省义乌市江东街道孔村一区59栋</p>
-        <p>版权所有 © 2024 政鑫皮业</p>
+    <div id="advantage" class="advantage">
+        <h3>产品详情</h3>
+        <p>品牌：政鑫皮革</p>
+        <p>材料：再生革</p>
+        <p>颜色：任意颜色可定制</p>
+        <p>规格：117cm~142cm,可定制</p>
+        <p>厚度：0.4mm~6.0mm</p>
+        <p>付款/支付方式：支付宝，电汇 等多方式，可致电联系</p>
+        
+    </div>
+    <div id="advantage" class="advantage">
+        <h2>优势</h2>
+        <p>政鑫皮业优势在于没有中间商赚差价，直接从厂家到消费者，确保质量和价格的优势。</p>
+        <!-- 优势图片使用懒加载和响应式图片 -->
+        <img class="lazyload" data-src="images/中间商.jpg" data-srcset="images/中间商-320w.jpg 320w, images/中间商-640w.jpg 640w, images/中间商.jpg 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" alt="优势图片">
+    </div>
+    <footer id="contact">
+        <div class="footer-content">
+            <p>负责人：万新</p>
+            <p>联系方式：18205793700、13580554453</p>
+            <p>地址：浙江省义乌市江东街道孔村一区59栋</p>
+            <p>版权所有 © 2024 政鑫皮业</p>
+        </div>
     </footer>
 </body>
 </html>
