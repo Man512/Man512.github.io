@@ -28,50 +28,95 @@
     <div id="products" class="container">
         <h2>产品展示</h2>
         <div class="products-grid">
-            <!-- 每个产品卡片使用懒加载和响应式图片 -->
-            <div class="product-card">
-                <img class="lazyload" data-src="images/再生2.jpg" data-srcset="images/再生2-320w.jpg 320w, images/再生2-640w.jpg 640w, images/再生2.jpg 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" alt="普通夹心再生革">
-                <h3 class="product-name">普通夹心再生革</h3>
-            </div>
-            <div class="product-card">
+             <!-- 普通夹心再生革 -->
+             <div class="product-card">
+                 <picture>
+                    <!-- WebP格式 -->
+                    <source class="lazyload" data-srcset="images/再生2-320w.webp 320w, images/再生2-640w.webp 640w, images/再生2.webp 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" type="image/webp">
+                    <!-- JPEG格式作为回退 -->
+                    <img class="lazyload" data-src="images/再生2.jpg" data-srcset="images/再生2-320w.jpg 320w, images/再生2-640w.jpg 640w, images/再生2.jpg 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" alt="普通夹心再生革">
+                 </picture>
+                 <h3 class="product-name">普通夹心再生革</h3>
+             </div>
+           <!-- 高胶再生革 -->
+           <div class="product-card">
+            <picture>
+                <source data-srcset="images/高胶环保-320w.webp 320w, images/高胶环保-640w.webp 640w, images/高胶环保.webp 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" type="image/webp">
                 <img class="lazyload" data-src="images/高胶环保.jpg" data-srcset="images/高胶环保-320w.jpg 320w, images/高胶环保-640w.jpg 640w, images/高胶环保.jpg 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" alt="高胶再生革">
-                <h3 class="product-name">高胶再生革</h3>
-            </div>
-            <div class="product-card"> 
+            </picture>
+            <h3 class="product-name">高胶再生革</h3>
+        </div>
+        <!-- 双磨中衬再生革 -->
+        <div class="product-card">
+            <picture>
+                <source data-srcset="images/黄色双磨中衬-320w.webp 320w, images/黄色双磨中衬-640w.webp 640w, images/黄色双磨中衬.webp 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" type="image/webp">
                 <img class="lazyload" data-src="images/黄色双磨中衬.jpg" data-srcset="images/黄色双磨中衬-320w.jpg 320w, images/黄色双磨中衬-640w.jpg 640w, images/黄色双磨中衬.jpg 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" alt="双磨中衬再生革">
-                <h3 class="product-name">双磨中衬再生革</h3>
-            </div>
-            <div class="product-card">
+            </picture>
+            <h3 class="product-name">双磨中衬再生革</h3>
+        </div>
+        <!-- 新欧标环保再生革 -->
+        <div class="product-card">
+            <picture>
+                <source data-srcset="images/新欧标环保再生-320w.webp 320w, images/新欧标环保再生-640w.webp 640w, images/新欧标环保再生.webp 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" type="image/webp">
                 <img class="lazyload" data-src="images/新欧标环保再生.jpg" data-srcset="images/新欧标环保再生-320w.jpg 320w, images/新欧标环保再生-640w.jpg 640w, images/新欧标环保再生.jpg 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" alt="新欧标环保再生革">
-                <h3 class="product-name">新欧标环保再生革</h3>
-            </div>
-            <div class="product-card">
+            </picture>
+            <h3 class="product-name">新欧标环保再生革</h3>
+        </div>
+        <!-- 无铬再生革(卷筒、单片) -->
+        <div class="product-card">
+            <picture>
+                <source data-srcset="images/无铬-320w.webp 320w, images/无铬-640w.webp 640w, images/无铬.webp 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" type="image/webp">
                 <img class="lazyload" data-src="images/无铬.jpg" data-srcset="images/无铬-320w.jpg 320w, images/无铬-640w.jpg 640w, images/无铬.jpg 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" alt="无铬再生革(卷筒、单片)">
-                <h3 class="product-name">无铬再生革(卷筒、单片)</h3>
-            </div>
-            <div class="product-card">
+            </picture>
+            <h3 class="product-name">无铬再生革(卷筒、单片)</h3>
+        </div>
+        <!-- 过苯酚全环保再生 -->
+        <div class="product-card">
+            <picture>
+                <source data-srcset="images/过苯酚-320w.webp 320w, images/过苯酚-640w.webp 640w, images/过苯酚.webp 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" type="image/webp">
                 <img class="lazyload" data-src="images/过苯酚.jpg" data-srcset="images/过苯酚-320w.jpg 320w, images/过苯酚-640w.jpg 640w, images/过苯酚.jpg 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" alt="过苯酚全环保再生">
-                <h3 class="product-name">过苯酚全环保再生</h3>
-            </div>
-            <div class="product-card">
+            </picture>
+            <h3 class="product-name">过苯酚全环保再生</h3>
+        </div>
+        <!-- 再生移膜皮 -->
+        <div class="product-card">
+            <picture>
+                <source data-srcset="images/PU-320w.webp 320w, images/PU-640w.webp 640w, images/PU.webp 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" type="image/webp">
                 <img class="lazyload" data-src="images/PU.jpg" data-srcset="images/PU-320w.jpg 320w, images/PU-640w.jpg 640w, images/PU.jpg 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" alt="再生移膜皮">
-                <h3 class="product-name">再生移膜皮</h3>
-            </div>
-            <div class="product-card">
+            </picture>
+            <h3 class="product-name">再生移膜皮</h3>
+        </div>
+        <!-- 再生仿牛皮/喷涂皮/压花 -->
+        <div class="product-card">
+            <picture>
+                <source data-srcset="images/压花001-320w.webp 320w, images/压花001-640w.webp 640w, images/压花001.webp 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" type="image/webp">
                 <img class="lazyload" data-src="images/压花001.jpg" data-srcset="images/压花001-320w.jpg 320w, images/压花001-640w.jpg 640w, images/压花001.jpg 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" alt="再生仿牛皮/喷涂皮/压花">
-                <h3 class="product-name">再生仿牛皮/喷涂皮/压花</h3>
-            </div>
-            <div class="product-card">
+            </picture>
+            <h3 class="product-name">再生仿牛皮/喷涂皮/压花</h3>
+        </div>
+        <!-- 再生鞋材皮 -->
+        <div class="product-card">
+            <picture>
+                <source data-srcset="images/鞋中底-320w.webp 320w, images/鞋中底-640w.webp 640w, images/鞋中底.webp 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" type="image/webp">
                 <img class="lazyload" data-src="images/鞋中底.jpg" data-srcset="images/鞋中底-320w.jpg 320w, images/鞋中底-640w.jpg 640w, images/鞋中底.jpg 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" alt="再生鞋材皮">
-                <h3 class="product-name">再生鞋材皮</h3>
-            </div>
-            <div class="product-card">
+            </picture>
+            <h3 class="product-name">再生鞋材皮</h3>
+        </div>
+        <!-- 环保皮边油 -->
+        <div class="product-card">
+            <picture>
+                <source data-srcset="images/环保皮边油-320w.webp 320w, images/环保皮边油-640w.webp 640w, images/环保皮边油.webp 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" type="image/webp">
                 <img class="lazyload" data-src="images/环保皮边油.jpg" data-srcset="images/环保皮边油-320w.jpg 320w, images/环保皮边油-640w.jpg 640w, images/环保皮边油.jpg 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" alt="环保皮边油">
-                <h3 class="product-name">环保皮边油</h3>
-            </div>
-            <div class="product-card">
+            </picture>
+            <h3 class="product-name">环保皮边油</h3>
+        </div>
+        <!-- 海绵 -->
+        <div class="product-card">
+            <picture>
+                <source data-srcset="images/海绵-320w.webp 320w, images/海绵-640w.webp 640w, images/海绵.webp 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" type="image/webp">
                 <img class="lazyload" data-src="images/海绵.jpg" data-srcset="images/海绵-320w.jpg 320w, images/海绵-640w.jpg 640w, images/海绵.jpg 1024w" sizes="(max-width: 320px) 280px, (max-width: 640px) 600px, 1024px" alt="海绵">
-                <h3 class="product-name">海绵</h3>
+            </picture>
+            <h3 class="product-name">海绵</h3>
             </div>
         </div>
         <div id="advantage" class="advantage">
