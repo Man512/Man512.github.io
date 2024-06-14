@@ -94,12 +94,21 @@
         <div class="footer-content">
             <p>负责人：万新</p>
             <p>联系方式：
-                <a href="tel:18205793700" class="phone-number">18205793700</a>、
-                <a href="tel:13580554453" class="phone-number">13580554453</a>
+                <span class="phone-number" onclick="showOptions('18205793700')">18205793700</span>、
+                <span class="phone-number" onclick="showOptions('13580554453')">13580554453</span>
             </p>
             <p>地址：浙江省义乌市江东街道孔村一区59栋</p>
             <p>版权所有 © 2024 政鑫皮业</p>
         </div>
     </footer>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <p>选择操作：</p>
+            <button id="call-btn">拨打电话</button>
+            <button id="copy-btn">复制号码</button>
+            <button onclick="hidePopup()">取消</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
