@@ -126,3 +126,8 @@ footer {
         margin-bottom: 10px;
     }
 }
+#contact .phone-number {
+    text-decoration: underline;
+    color: red ; /* 可选，改变链接颜色 */
+    cursor: pointer; /* 可选，改变鼠标悬停时的光标 */
+}
